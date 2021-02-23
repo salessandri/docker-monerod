@@ -2,7 +2,6 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/salessandri/monerod.svg)](https://hub.docker.com/r/salessandri/monerod/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/salessandri/monerod.svg)](https://hub.docker.com/r/salessandri/monerod/)
-[![ImageLayers](https://images.microbadger.com/badges/image/salessandri/monerod.svg)](https://microbadger.com/images/salessandri/monerod)
 
 Docker image that runs a full Monero node node in a container for easy deployment.
 
