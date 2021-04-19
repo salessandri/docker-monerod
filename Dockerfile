@@ -2,8 +2,8 @@ FROM ubuntu:20.04
 
 LABEL maintainer="Santiago Alessandri <santiago@salessandri.name>"
 
-ARG MONERO_VERSION=0.17.1.9
-ARG MONERO_SHA256=0fb6f53b7b9b3b205151c652b6c9ca7e735f80bfe78427d1061f042723ee6381
+ARG MONERO_VERSION=0.17.2.0
+ARG MONERO_SHA256=59e16c53b2aff8d9ab7a8ba3279ee826ac1f2480fbb98e79a149e6be23dd9086
 ARG UID=1337
 
 RUN useradd --uid ${UID} --user-group \
