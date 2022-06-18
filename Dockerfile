@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 LABEL maintainer="Santiago Alessandri <santiago@salessandri.name>"
 
@@ -11,7 +11,7 @@ RUN useradd --uid ${UID} --user-group \
     mkdir /home/monero/.bitmonero && chown monero:monero /home/monero/.bitmonero
 
 RUN apt-get update && apt-get install -y \
-  curl && \
+  curl bzip2 && \
   curl https://downloads.getmonero.org/cli/monero-linux-x64-v${MONERO_VERSION}.tar.bz2 -O && \
   echo "${MONERO_SHA256}  monero-linux-x64-v${MONERO_VERSION}.tar.bz2" | sha256sum -c - && \
   tar xvfj monero-linux-x64-v${MONERO_VERSION}.tar.bz2 && \
